@@ -6,7 +6,7 @@ on:
       - opened
       - synchronize
 
-job:
+jobs:
   unitTests:
     name: Run Unit Tests
     runs-on: ubuntu-latest
