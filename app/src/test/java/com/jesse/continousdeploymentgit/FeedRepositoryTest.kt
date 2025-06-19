@@ -2,7 +2,6 @@ package com.jesse.continousdeploymentgit
 
 import com.jesse.continousdeploymentgit.data.model.FeedItemFactory
 import com.jesse.continousdeploymentgit.data.model.FeedRepository
-import junit.framework.Assert.assertEquals
 import org.junit.Test
 
 class FeedRepositoryTest {
@@ -11,6 +10,6 @@ class FeedRepositoryTest {
 
     @Test
     fun `Feed items returned`() {
-        assertEquals(FeedItemFactory.makeFeedItems(), repository.retrieveFeedItems())
+        assert(FeedItemFactory.makeFeedItems() == repository.retrieveFeedItems())
     }
 }
